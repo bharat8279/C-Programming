@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<math.h>
+void main()
+{
+	int a,temp,t,h,count=0;
+	printf("ENTER THE NUMBER TO BE CHECKED\n");
+	scanf("%d",&a);
+	t=a;
+	while(t!=0)
+	{
+	count=count+1;
+	t=t/10;
+}
+     t=a;
+     while(t!=0)
+     {
+     	h=t%10;
+	    temp=temp+pow(h,count);
+	    t=t/10;
+      }
+     if(temp==a)
+	{
+	printf("Yes %d is a armstrong number",a);
+}
+	else
+	{
+	printf("No %d is not a armstrong number",a);
+}
+	}
+
+
+
