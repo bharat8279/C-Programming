@@ -1,0 +1,54 @@
+#include<stdio.h>
+void main()
+{
+	int ch,a,b,c;
+	printf("ENTER 1 TO CHECK ODD OR EVEN AND ENTER 2 TO FIND GREATEST BETWEEN THREE NUMBERS");
+	scanf("%d",&ch);
+	switch(ch)
+	{
+	
+	case 1:
+		{
+		
+	printf("Enter the number to be checked\n");
+	scanf("%d",&a);
+	if(a%2==0)
+	printf("The number is even %d\n",a);
+	else
+	printf("The number is odd %d\n",a);
+	break;
+	
+	
+	
+	
+}
+case 2:
+
+	printf("Enter the first number\n");
+	scanf("%d",&a);
+	printf("Enter the second number\n");
+	scanf("%d",&b);
+	printf("Enter the third number\n");
+	scanf("%d",&c);
+	if(a>b && b>c)
+	{
+	
+	printf("Greatest number is %d\n",a);
+}
+	else if(b>a && c>a)
+	{
+	
+	printf("Greatest number is %d\n",b);
+}
+	else
+	{
+	
+	printf("Greatst number is %d\n",c);
+}
+	break;	
+	default:
+		printf("Wrong choice entered by user");
+		break;
+	
+}
+}
